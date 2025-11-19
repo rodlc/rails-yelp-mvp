@@ -1,5 +1,16 @@
-<h1>Nouveau restaurant</h1>
-
-<%= render 'form', restaurant: @restaurant %>
-
-<%= link_to "Retour", restaurants_path %>
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-header bg-primary text-white">
+        <h2 class="mb-0">Nouveau restaurant</h2>
+      </div>
+      <div class="card-body">
+        <%= render 'form', restaurant: @restaurant %>
+      </div>
+    </div>
+    
+    <div class="mt-3">
+      <%= link_to "← Retour", restaurants_path, class: "btn btn-outline-secondary" %>
+    </div>
+  </div>
+</div>
